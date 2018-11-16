@@ -31,7 +31,7 @@
 		"name":"铁矿",
 		"level":1,
 		"quality":2,
-		"price":0,
+		"price":50,
 		"combine":0
 	},
 	{
@@ -81,7 +81,7 @@
 		"name":"木心",
 		"level":2,
 		"quality":3,
-		"price":0,
+		"price":200,
 		"combine":0
 	},
 	{
@@ -95,7 +95,7 @@
 		"name":"锡矿",
 		"level":2,
 		"quality":2,
-		"price":0,
+		"price":70,
 		"combine":0
 	},
 	{

@@ -26,7 +26,7 @@ class MrzhWindow():
 		number = tk.StringVar()
 		self.numberChosen = ttk.Combobox(self.win_root, width=10, textvariable=number)
 		self.numberChosen.place(x=100, y=0)
-		self.numberChosen['values'] = ('uzi', '警用卫衣')     # 设置下拉列表的值
+		self.numberChosen['values'] = ('uzi', '警用卫衣','铁铸件')     # 设置下拉列表的值
 		self.numberChosen.current(0)
 		self.numberChosen.bind("<<ComboboxSelected>>",self.show_info)
 
@@ -66,10 +66,11 @@ class MrzhWindow():
 		for item in x:
 			self.tree.delete(item)
 
+		price_sum = 0
 		for i in need_list:
-			self.tree.insert('','end',values=(need_list[i],i.name,0,0))
-
-		self.tree.insert('','end',values=('','','总价',0))
+			self.tree.insert('','end',values=(need_list[i],i.name,i.price,need_list[i]*i.price))
+			price_sum+=need_list[i]*i.price
+		self.tree.insert('','end',values=('','','总价',price_sum))
 
 	def show(self):
 		self.win_root.mainloop()

@@ -10,6 +10,7 @@ class item(object):
 		self.name = josn_str['name']
 		self.level = josn_str['level']
 		self.quality = josn_str['quality'] 
+		self.price = josn_str['price'] 
 		self.combine = josn_str['combine'] == 1
 		if self.combine == True:
 			self.combine_list = josn_str['combine_list']
