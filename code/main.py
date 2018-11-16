@@ -36,11 +36,10 @@ class MrzhWindow():
 		self.frame=ttk.Frame(self.win_root)
 		self.frame.place(x=0, y=40)
 		#self.frame.pack(fill='both',expand='false')
-		self.tree=ttk.Treeview(self.frame,columns=['数量','基础物品'],show='headings')
+
+		self.tree=ttk.Treeview(self.frame,columns=['数量','基础物品'],show='headings',height=18)
 		self.tree.heading('数量',text='数量')
 		self.tree.heading('基础物品',text='基础物品')
-		#for item in bookList:
-		#	self.tree.insert('','end',values=item)
 		self.tree.pack()
 
 
