@@ -17,10 +17,10 @@ class item(object):
 
 
 
-class item_list(object):
+class ItemList(object):
 	"""docstring for item_list"""
 	def __init__(self):
-		super(item_list, self).__init__()
+		super(ItemList, self).__init__()
 		self.item_list_ = {}
 		json_path = '../resources/item.json'
 		ff = codecs.open(json_path, 'r', 'utf-8')
@@ -57,7 +57,7 @@ def find_base_item(items,name,k):
 	return need_list
 
 def main():
-	items = item_list()
+	items = ItemList()
 
 	#print(items.get_item_info('uzi').name)
 	name = '警用卫衣'
@@ -65,7 +65,7 @@ def main():
 
 	need_list = find_base_item(items,name,1)
 	for i in need_list:
-		print('%-10d  %-20s  '%(need_list[i],i.name))
+		print('%-4d  %-20s  '%(need_list[i],i.name))
 		#print (i.name,' ',need_list[i])
 	#print(need_list)
 
