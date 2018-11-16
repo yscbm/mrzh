@@ -37,10 +37,19 @@ class MrzhWindow():
 		self.frame.place(x=0, y=40)
 		#self.frame.pack(fill='both',expand='false')
 
-		self.tree=ttk.Treeview(self.frame,columns=['数量','基础物品'],show='headings',height=18)
+		self.tree=ttk.Treeview(self.frame,columns=['数量','基础物品','单价','物品总价'],show='headings',height=18)
+		
+		self.tree.column('数量', width=50) 
+		self.tree.column('基础物品', width=100) 
+		self.tree.column('单价', width=50) 
+		self.tree.column('物品总价', width=100) 
+
 		self.tree.heading('数量',text='数量')
 		self.tree.heading('基础物品',text='基础物品')
+		self.tree.heading('单价',text='单价')
+		self.tree.heading('物品总价',text='物品总价')
 		self.tree.pack()
+
 
 
 
@@ -58,8 +67,9 @@ class MrzhWindow():
 			self.tree.delete(item)
 
 		for i in need_list:
-			self.tree.insert('','end',values=(need_list[i],i.name))
+			self.tree.insert('','end',values=(need_list[i],i.name,0,0))
 
+		self.tree.insert('','end',values=('','','总价',0))
 
 	def show(self):
 		self.win_root.mainloop()
