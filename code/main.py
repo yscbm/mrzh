@@ -26,7 +26,7 @@ class MrzhWindow():
 		number = tk.StringVar()
 		self.numberChosen = ttk.Combobox(self.win_root, width=10, textvariable=number)
 		self.numberChosen.place(x=100, y=0)
-		self.numberChosen['values'] = ('uzi', '警用卫衣','铁铸件')     # 设置下拉列表的值
+		self.numberChosen['values'] = ('ump9','汤姆逊','战斗先锋','防弹武装','普通弹药箱','御寒棉帽','uzi', '复合弓', '警用卫衣','铁铸件','六角钉')     # 设置下拉列表的值
 		self.numberChosen.current(0)
 		self.numberChosen.bind("<<ComboboxSelected>>",self.show_info)
 

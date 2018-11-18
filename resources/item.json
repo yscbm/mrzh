@@ -31,7 +31,7 @@
 		"name":"铁矿",
 		"level":1,
 		"quality":2,
-		"price":50,
+		"price":65,
 		"combine":0
 	},
 	{
@@ -81,7 +81,7 @@
 		"name":"木心",
 		"level":2,
 		"quality":3,
-		"price":200,
+		"price":148,
 		"combine":0
 	},
 	{
@@ -95,7 +95,7 @@
 		"name":"锡矿",
 		"level":2,
 		"quality":2,
-		"price":70,
+		"price":73,
 		"combine":0
 	},
 	{
@@ -152,53 +152,95 @@
 		"name":"老柏木",
 		"level":3,
 		"quality":2,
-		"price":0,
+		"price":54,
+		"combine":0
+	},
+	{
+		"name":"树油",
+		"level":3,
+		"quality":2,
+		"price":86,
 		"combine":0
 	},
 	{
 		"name":"柏树叶",
 		"level":3,
 		"quality":3,
-		"price":0,
+		"price":78,
 		"combine":0
 	},
 	{
 		"name":"铝矿",
 		"level":3,
 		"quality":2,
-		"price":0,
+		"price":61,
 		"combine":0
 	},
 	{
 		"name":"蓝晶石",
 		"level":3,
 		"quality":3,
-		"price":0,
+		"price":100,
 		"combine":0
 	},
 	{
 		"name":"亚麻叶",
 		"level":3,
 		"quality":2,
-		"price":0,
+		"price":70,
 		"combine":0
 	},
 	{
 		"name":"亚麻花瓣",
 		"level":3,
 		"quality":3,
-		"price":0,
+		"price":160,
 		"combine":0
 	},
 	{
 		"name":"油脂",
 		"level":3,
 		"quality":2,
-		"price":0,
+		"price":63,
 		"combine":0
 	},
 	{
 		"name":"兽角",
+		"level":3,
+		"quality":3,
+		"price":140,
+		"combine":0
+	},
+	{
+		"name":"高分子涂层",
+		"level":3,
+		"quality":3,
+		"price":3000,
+		"combine":0
+	},
+	{
+		"name":"薄膜面料",
+		"level":3,
+		"quality":3,
+		"price":2000,
+		"combine":0
+	},
+	{
+		"name":"麻绳",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":0
+	},
+	{
+		"name":"胶水",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":0
+	},
+	{
+		"name":"钉子",
 		"level":3,
 		"quality":3,
 		"price":0,
@@ -276,8 +318,8 @@
 		"name":"铁铸件",
 		"level":2,
 		"quality":3,
-		"price":0,
-		"combine":1,
+		"price":1000,
+		"combine":0,
 		"combine_list":
 		{
 			"锡矿":4,
@@ -299,8 +341,88 @@
 			"硫磺":2
 		}
 	},
+	{
+		"name":"硬铝合金",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"铝矿":5,
+			"锡矿":5,
+			"老柏木":9,
+			"树油":5
+		}
+	},
+	{
+		"name":"尼龙布",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"亚麻叶":3,
+			"亚麻花瓣":1,
+			"柏树叶":5
+		}
+	},
+	{
+		"name":"黑火药",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"木头":600,
+			"石头":150,
+			"燧石":2
+		}
+	},
+	{
+		"name":"无烟火药",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"黑火药":3,
+			"硝石":1,
+			"蓝晶石":5
+		}
+	},
+	{
+		"name":"木板",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":0,
+		"combine_list":
+		{
+			"木头":120,
+			"小树枝":2
+		}
+	},
 
 
+
+	{
+		"name":"普通弹药箱",
+		"level":2,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"无烟火药":2,
+			"硬铝合金":2,
+			"兽角":3,
+			"木板":15
+		}
+	},
 	{
 		"name":"uzi",
 		"level":2,
@@ -315,6 +437,20 @@
 		}
 	},
 	{
+		"name":"复合弓",
+		"level":2,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"铁铸件":10,
+			"螺钉":10,
+			"兽筋":10,
+			"胶水":8
+		}
+	},
+	{
 		"name":"警用卫衣",
 		"level":2,
 		"quality":3,
@@ -325,6 +461,76 @@
 			"布":10,
 			"塑料":10,
 			"螺钉":10
+		}
+	},
+	{
+		"name":"防弹武装",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"尼龙布":10,
+			"硬铝合金":10,
+			"麻绳":10,
+			"薄膜面料":4
+		}
+	},
+	{
+		"name":"战斗先锋",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"尼龙布":10,
+			"铁铸件":12,
+			"布":12,
+			"薄膜面料":4
+		}
+	},
+	{
+		"name":"御寒棉帽",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"尼龙布":10,
+			"兽筋":13,
+			"布":12,
+			"薄膜面料":4
+		}
+	},
+	{
+		"name":"ump9",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"硬铝合金":10,
+			"六角钉":12,
+			"油脂":24,
+			"高分子涂层":4
+		}
+	},
+	{
+		"name":"汤姆逊",
+		"level":3,
+		"quality":3,
+		"price":0,
+		"combine":1,
+		"combine_list":
+		{
+			"硬铝合金":10,
+			"铁铸件":12,
+			"钉子":10,
+			"高分子涂层":4
 		}
 	},
 
